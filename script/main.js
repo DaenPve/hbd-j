@@ -264,7 +264,14 @@ const animationTimeline = () => {
         rotation: 90
       },
       "+=1"
-    );
+    )
+    .from(".fam-photo", 1, {
+      opacity: 0,
+      y: 50,
+      scale: 0.8,
+      stagger: 0.3,
+      ease: Power3.easeOut
+    }, "+=0.5");
 
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
