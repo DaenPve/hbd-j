@@ -98,6 +98,22 @@ body {
   display: inline-block;
 }
 
+.family-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.family-images img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
 .five .idea-5 {
   font-size: 2rem;
   display: flex;
@@ -244,11 +260,19 @@ body {
   .six .hat {
     left: 32;
   }
+
+    .family-images img {
+    max-width: 120px;
+  }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
     left: 30%;
+  }
+
+    .family-images img {
+    max-width: 120px;
   }
 }
 
@@ -256,11 +280,19 @@ body {
   .six .hat {
     left: 27%;
   }
+
+    .family-images img {
+    max-width: 120px;
+  }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
     left: 27%;
+  }
+
+    .family-images img {
+    max-width: 120px;
   }
 }
 
@@ -303,5 +335,9 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+
+    .family-images img {
+    max-width: 120px;
   }
 }
